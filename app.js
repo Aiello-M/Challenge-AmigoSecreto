@@ -89,10 +89,12 @@ function sortearAmigo(){
     let nombreSorteado = amigos[i];                    // se guarda el nombre del amigo de ese índice
     document.getElementById('resultado').innerHTML = `El amigo secreto sorteado es: ${nombreSorteado}`;
 
+    // condiciones al finalizar juego
     limpiarElemento('listaAmigos');          // limpiar la lista visible
     deshabilitarElemento('#amigo');         // deshabilitar input
     deshabilitarElemento('.button-add');    // deshabilitar botón añadir
-    deshabilitarElemento('.button-draw');   // deshabilitar botón sortear     
+    deshabilitarElemento('.button-draw');   // deshabilitar botón sortear  
+    actualizarMensajeTitulo("🎉 ¡Juego Finalizado! Reiniciar para volver a empezar."); 
 }
 
 
@@ -107,6 +109,12 @@ function deshabilitarElemento(selector) {
 function habilitarElemento(selector) {
     const elemento = document.querySelector(selector);
     elemento.removeAttribute('disabled');
+}
+
+// Función para actualizar el mensaje del título
+function actualizarMensajeTitulo(mensaje) {
+    const titulo = document.querySelector('.section-title');
+    titulo.textContent = mensaje;
 }
 
 
@@ -124,4 +132,7 @@ function reiniciarJuego() {
     habilitarElemento('#amigo');         // input
     habilitarElemento('.button-add');    // botón añadir
     habilitarElemento('.button-draw');   // botón sortear
+
+    // Restaurar texto original del título
+    actualizarMensajeTitulo("Digite el nombre de sus amigos");
 }
