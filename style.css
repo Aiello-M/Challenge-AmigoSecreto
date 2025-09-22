@@ -198,7 +198,7 @@ button:disabled {
 
 /* Botón de sortear deshabilitado */
 .button-draw:disabled {
-    background-color: #fa6833;
+    background-color: #c7c7c7; /* gris */
     color: white;
     opacity: 0.99;
     /* cursor: not-allowed;*/
@@ -209,4 +209,5 @@ input:disabled {
     background-color: #e0e0e0; 
     color: #7a7a7a;           
     opacity: 0.99;
+
 }
