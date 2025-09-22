@@ -6,6 +6,11 @@
   <img src="https://img.shields.io/badge/Alura%20/%20Oracle%20Next%20Education%20(ONE)-G9-blue">
 </p>
 
+<p align="center">
+  🔗 <a href="https://aiello-m.github.io/Challenge-AmigoSecreto/" target="_blank">Ver la página en GitHub Pages</a>
+</p>
+
+
 ## 📚 Sobre el Challenge
 Este proyecto forma parte del programa **Oracle Next Education (ONE) - G9** en colaboración con **Alura Latam**.  
 Corresponde al challenge **"Amigo Secreto"** de la ruta *Principiante en Programación*.
